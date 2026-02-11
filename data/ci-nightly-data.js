@@ -1,4 +1,220 @@
 var ci_nightly_data = 
 {
-    
+  'Lint code / lint (amd64, ubuntu-22.04)': {
+    runs: 3,
+    fails: 0,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586323176',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586060729',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585524852'
+    ],
+    results: [ 'Pass', 'Pass', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Build / build (arm64, ubuntu-22.04-arm)': {
+    runs: 3,
+    fails: 0,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586323177',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586060711',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585524897'
+    ],
+    results: [ 'Pass', 'Pass', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Lint Files & commits / Check License Headers (amd64, ubuntu-22.04)': {
+    runs: 3,
+    fails: 0,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586323180',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586060733',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585524856'
+    ],
+    results: [ 'Pass', 'Pass', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Lint Files & commits / Lint Commit Messages (amd64, ubuntu-22.04)': {
+    runs: 3,
+    fails: 0,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586323191',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586060720',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585524880'
+    ],
+    results: [ 'Pass', 'Pass', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Lint Files & commits / Spell Check Repo (amd64, ubuntu-22.04)': {
+    runs: 3,
+    fails: 0,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586323194',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586060718',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585524889'
+    ],
+    results: [ 'Pass', 'Pass', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Build / build (amd64, ubuntu-22.04)': {
+    runs: 3,
+    fails: 0,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586323208',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586060723',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585524863'
+    ],
+    results: [ 'Pass', 'Pass', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Kubernetes test / Kubernetes test (amd64, ubuntu-22.04)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474060',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170796',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583057'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Kubernetes test / Kubernetes test (arm64, ubuntu-22.04-arm)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474061',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170788',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583058'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (amd64, test_nerdctl)': {
+    runs: 3,
+    fails: 3,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474117',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170810',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583075'
+    ],
+    results: [ 'Fail', 'Fail', 'Fail' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (amd64, test_docker)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474119',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170826',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583092'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (amd64, test_ctr)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474121',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170815',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583122'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (arm64, test_ctr)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474124',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170849',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583125'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (arm64, test_nerdctl)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474127',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170846',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583116'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (amd64, test_crictl)': {
+    runs: 3,
+    fails: 3,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474129',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170820',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583124'
+    ],
+    results: [ 'Fail', 'Fail', 'Fail' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (arm64, test_docker)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474131',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170842',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583123'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'E2E test / VM test (arm64, test_crictl)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/16802303719/job/47586474138',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802222304/job/47586170852',
+      'https://github.com/urunc-dev/urunc/actions/runs/16802056057/job/47585583110'
+    ],
+    results: [ 'Fail', 'Fail', 'Pass' ],
+    run_nums: [ 77, 76, 73 ]
+  },
+  'Test Knative / Knative test (amd64)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/15066014296/job/42350944151',
+      'https://github.com/urunc-dev/urunc/actions/runs/14652392894/job/41121524345',
+      'https://github.com/urunc-dev/urunc/actions/runs/14651298180/job/41117491334'
+    ],
+    results: [ 'Fail', 'Pass', 'Fail' ],
+    run_nums: [ 70, 69, 68 ]
+  },
+  'Test Knative / Knative test (arm64)': {
+    runs: 3,
+    fails: 2,
+    skips: 0,
+    urls: [
+      'https://github.com/urunc-dev/urunc/actions/runs/15066014296/job/42350944639',
+      'https://github.com/urunc-dev/urunc/actions/runs/14652392894/job/41121524735',
+      'https://github.com/urunc-dev/urunc/actions/runs/14651298180/job/41117491689'
+    ],
+    results: [ 'Fail', 'Pass', 'Fail' ],
+    run_nums: [ 70, 69, 68 ]
+  }
 }
+;
