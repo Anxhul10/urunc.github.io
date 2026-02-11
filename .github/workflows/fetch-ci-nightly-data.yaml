@@ -2,46 +2,25 @@ name: Fetch CI Nightly Data
 run-name: Fetch CI Nightly Data
 on:
   schedule:
-    - cron: '0 4 * * *'
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'scripts/fetch-ci-nightly-data.js'
-      - '.github/workflows/fetch-ci-nightly-data.yaml'
-
+    - cron: '0 * * * *'
 jobs:
   fetch-and-commit-data:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: npm install
-        shell: bash
-        run: |
-          npm install
-      - name: Update dashboard data
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # Use bash to fail fast:
-        # https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell
-        shell: bash
-        run: |
-          # fetch ci nightly data as temporary file
-          node scripts/fetch-ci-nightly-data.js | tee tmp-data.json
-          # switch to a branch specifically for holding latest data
-          git config --global user.name "GH Actions Workflow"
-          git config --global user.email "<gha@runner>"
-          git fetch --all
-          git checkout latest-dashboard-data
-          # back out whatever data was there
-          git reset HEAD~1
-          # overwrite the old data
-          mkdir -p data/
-          mv tmp-data.json data/job_stats.json
-          # commit
-          git add data
-          git commit -m '[skip ci] latest ci nightly data'
-          git push --force
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Update dashboard data
+      run: |
+        mkdir -p data
+        node js/fetch-ci-nightly-data.js > data/job_stats.json
+
+        git config user.name "GH Actions Workflow"
+        git config user.email "gha@runner"
+
+        git add data/job_stats.json
+        git commit -m "latest ci nightly data"
+        git push
+
