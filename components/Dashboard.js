@@ -300,7 +300,7 @@ export default function Dashboard({ coco = false }) {
   return (
     <div className="text-center">
       <Head>
-        <title>Kata CI Dashboard</title>
+        <title>urunc CI Dashboard</title>
       </Head>
 
       <h1
