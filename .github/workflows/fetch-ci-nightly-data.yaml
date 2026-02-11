@@ -3,7 +3,6 @@ run-name: Fetch CI Nightly Data
 on:
   schedule:
     - cron: '0 * * * *'
-  push:
 jobs:
   fetch-and-commit-data:
     runs-on: ubuntu-22.04
@@ -22,5 +21,5 @@ jobs:
         git config user.email "gha@runner"
 
         git add data
-        git commit -m "[skip ci] latest ci nightly data" || echo "No changes"
+        git commit -m "chore: add new data"
         git push
