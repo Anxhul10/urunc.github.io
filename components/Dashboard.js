@@ -316,7 +316,7 @@ export default function Dashboard({ coco = false }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Kata CI Dashboard
+          urunc CI Dashboard
         </a>
       </h1>
 
