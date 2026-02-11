@@ -310,8 +310,8 @@ export default function Dashboard({ coco = false }) {
       >
         <a
           href={
-            "https://github.com/kata-containers/kata-containers/" +
-            "actions/workflows/ci-nightly.yaml"
+            "https://github.com/urunc-dev/urunc/"+
+            "actions/workflows/nightly.yml"
           }
           target="_blank"
           rel="noopener noreferrer"
