@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     function populate_table(job_stats) {
         for (var [name, stat] of Object.entries(job_stats)) {
-            re = new RegExp('kata-containers-ci-on-push / run-.*-tests.*');
+            re = new RegExp('urunc-containers-ci-on-push / run-.*-tests.*');
             if (re.test(name)) {
                 var [img_tag, img_sort] = get_weather_icon(stat);
                 var urls = stat['urls'].join(' ');
@@ -52,11 +52,11 @@ $(document).ready(function () {
         }
         // Hard-code for now...could dynamically set the table name or something
         // more sophisticated later if we have want more tables, etc.
-        $('#weather-table-name').append(
-          '<a href="https://github.com/kata-containers/kata-containers/actions/workflows/ci-nightly.yaml">'
-        + 'Kata Containers CI Nightly'
-        + '</a>'
-        );
+        // $('#weather-table-name').append(
+        //   '<a href="https://github.com/kata-containers/kata-containers/actions/workflows/ci-nightly.yaml">'
+        // + 'Kata Containers CI Nightly'
+        // + '</a>'
+        // );
     }
 
     // Create the hyperlinks that will show up when we click a name for more
