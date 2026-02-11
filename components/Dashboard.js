@@ -21,8 +21,8 @@ export default function Dashboard({ coco = false }) {
         data = (await import("../localData/job_stats.json")).default;
       } else {
         const response = await fetch(
-          "https://raw.githubusercontent.com/kata-containers/kata-containers.github.io" +
-            "/refs/heads/latest-dashboard-data/data/job_stats.json"
+          "https://raw.githubusercontent.com/Anxhul10/urunc.github.io"+
+          "/refs/heads/latest-dashboard-data/data/job_stats.json"
         );
         data = await response.json();
       }
