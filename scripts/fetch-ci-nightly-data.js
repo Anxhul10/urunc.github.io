@@ -19,22 +19,21 @@ if(process.env.NODE_ENV === "development"){
   dotenv.config();
 }
 const TOKEN = process.env.TOKEN;  
-  
-// Github API URL for the kata-container ci-nightly workflow's runs. This
+// Github API URL for the urunc ci-nightly workflow's runs. This
 // will only get the most recent 10 runs ('per_page=10').
 const total_runs = 10;
 
 const ci_nightly_runs_url =
   "https://api.github.com/repos/" +
-  "kata-containers/kata-containers/actions/workflows/" +
-  `ci-nightly.yaml/runs?per_page=${total_runs}`;
+  "urunc-dev/urunc/actions/workflows/" +
+  `nightly.yml/runs?per_page=${total_runs}`;
   // NOTE: For checks run on main after push/merge,
   // do similar call with: payload-after-push.yaml.
 
 // Github API URL for the main branch of the kata-containers repo.
 // Used to get the list of required jobs.
 const main_branch_url = "https://api.github.com/repos/" +
-                        "kata-containers/kata-containers/branches/main";
+                        "urunc-dev/urunc/branches/main";
 
 // The number of jobs to fetch from the github API on each paged request.
 const jobs_per_request = 50;

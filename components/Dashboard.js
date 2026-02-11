@@ -21,8 +21,8 @@ export default function Dashboard({ coco = false }) {
         data = (await import("../localData/job_stats.json")).default;
       } else {
         const response = await fetch(
-          "https://raw.githubusercontent.com/kata-containers/kata-containers.github.io" +
-            "/refs/heads/latest-dashboard-data/data/job_stats.json"
+          "https://raw.githubusercontent.com/Anxhul10/urunc.github.io"+
+          "/refs/heads/latest-dashboard-data/data/job_stats.json"
         );
         data = await response.json();
       }
@@ -300,7 +300,7 @@ export default function Dashboard({ coco = false }) {
   return (
     <div className="text-center">
       <Head>
-        <title>Kata CI Dashboard</title>
+        <title>urunc CI Dashboard</title>
       </Head>
 
       <h1
@@ -310,13 +310,13 @@ export default function Dashboard({ coco = false }) {
       >
         <a
           href={
-            "https://github.com/kata-containers/kata-containers/" +
-            "actions/workflows/ci-nightly.yaml"
+            "https://github.com/urunc-dev/urunc/"+
+            "actions/workflows/nightly.yml"
           }
           target="_blank"
           rel="noopener noreferrer"
         >
-          Kata CI Dashboard
+          urunc CI Dashboard
         </a>
       </h1>
 

@@ -1,6 +1,6 @@
-# Kata Containers Test Dashboard
+# urunc Test Dashboard
 
-This repository contains the **Kata Containers Test Dashboard**, a web application that visualizes data for the nightly tests run by the Kata Containers repository. Built using **Next.js** and styled with **TailwindCSS**, this dashboard provides a simple and efficient interface to monitor test results, leveraging modern frontend technologies to ensure responsive and scalable performance.
+This repository contains the **urunc Test Dashboard**, a web application that visualizes data for the nightly tests run by the urunc repository. Built using **Next.js** and styled with **TailwindCSS**, this dashboard provides a simple and efficient interface to monitor test results, leveraging modern frontend technologies to ensure responsive and scalable performance.
 
 ## Features
 - Fetches nightly CI test data using custom scripts.
@@ -47,7 +47,7 @@ This repository contains the **Kata Containers Test Dashboard**, a web applicati
 
 ## Setup Instructions
 
-Follow these steps to set up the development environment for the Kata Containers Test Dashboard:
+Follow these steps to set up the development environment for the urunc Test Dashboard:
 
 ### Prerequisites
 - [**Node.js**](https://nodejs.org/en/download) (version 18.x or later recommended)
@@ -57,8 +57,9 @@ Follow these steps to set up the development environment for the Kata Containers
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/kata-containers/kata-containers.github.io.git
-   cd kata-containers.github.io
+   git clone https://github.com/Anxhul10/urunc.github.io.git
+
+   cd urunc.github.io
    ```
 
 2. **Install dependencies**:
